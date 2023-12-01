@@ -1,0 +1,17 @@
+.opcionesWeb{
+    display: flex;
+}
+
+.opcionesMovil{
+    display: none;
+}
+
+@media only screen and (max-width: 993px)
+{
+    .opcionesWeb{
+        display: none;
+    }
+    .opcionesMovil{
+        display: block;
+    }
+}

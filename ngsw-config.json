@@ -1,0 +1,79 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name":"data-api",
+      "urls":[ 
+        "https://escuelaprimaria.net/wp-content/uploads/2020/06/comunicacion-para-quinto-de-primaria-compressor.jpg",
+        "https://imgs.search.brave.com/gTBBZ3a50kbA9CuwFT9lk03XidbYq0mThUnzM5x99sQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MjAwMzk3Mi9lcy9m/b3RvL3JldHJhdG8t/ZGVsLWhvbWJyZS1h/ZnJvYW1lcmljYW5v/LXJpZW5kby1taXJh/bmRvLWhhY2lhLWFy/cmliYS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9blY2TDBD/RnVrTUNscUNsMWMx/YUlRUW1Zd0Yya3hq/V0xyQkVabFU3cEFP/TT0",
+        "https://imgs.search.brave.com/lrplHu3jk0HaObcA3WzxZUNmVzuGLOvZj_LmZ8jQWWE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTM4/MDM1MTA2L2VzL2Zv/dG8vc2lsdWV0YS1k/ZS1ob21icmUtYWZy/aWNhbm8tYWlzbGFk/by1yZXRyYXRvLWRl/LXBlcmZpbC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9VWxX/d0dOQWp4OUlDS2cw/eUVUdkkwREVpTEc5/bTV0Y1pyWUR0T05h/Tmtkdz0",
+        "https://escuelaprimaria.net/wp-content/uploads/2019/11/matematica-para-tercero-de-primaria.jpg",
+        "https://escuelaprimaria.net/wp-content/uploads/2019/11/comunicacion-para-tercero-de-primaria.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv17ddN_c-akOLfc6gOusug0YGRXIQS9xgSfHMn7HQlPq25NeA0H5GQwkFMh4oPnr7Af0&usqp=CAU",
+        "https://escuelaprimaria.net/wp-content/uploads/2019/11/personal-social-para-tercero-de-primaria.jpg",
+        "https://escuelaprimaria.net/wp-content/uploads/2020/06/ciencia-y-ambiente-para-quinto-de-primaria-compressor.jpg",
+        "htps://escuelaprimaria.net/wp-content/uploads/2020/06/comprension-lectora-para-quinto-de-primaria.jpg",
+        
+        "https://escuelaprimaria.net/wp-content/uploads/2019/01/comunicacion-para-primero-de-primaria.jpg",
+        "https://png.pngtree.com/thumb_back/fw800/background/20210902/pngtree-summer-cram-school-summer-class-border-holiday-training-education-green-image_789183.jpg",
+        
+        
+        "https://educacionespecialmx.site/idd_Educatio_back/public_html/api",
+        "https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2",
+        "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css",
+        "https://fonts.gstatic.com/s/staatliches/v13/HI_OiY8KO6hCsQSoAPmtMYebvpCfOMPT.woff2",
+        "https://my-app-phi-coral-81.vercel.app/assets/img/logoNavbar.png",
+        "https://my-app-phi-coral-81.vercel.app/assets/img/logotipo2.png",
+        "https://brayanahernandez.000webhostapp.com/img/icons8-men%C3%BA-48.png",
+        "https://educacionespecialmx.site/imgAppWeb/icons8-atr%C3%A1s-52.png",
+        "https://educacionespecialmx.site/imgAppWeb/userimage.png",
+        "https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2",
+        "https://my-app-phi-coral-81.vercel.app/ngsw.json?ngsw-cache-bust=0.482122894272893",
+        "https://www.youtube.com/iframe_api",
+        "https://code.jquery.com/jquery-2.1.1.min.js",
+        "https://www.paypal.com/sdk/js?client-id=ARBPZIpAHtSK4UrxFRNfF8QA1MZcSQBtSGl5kO0Slw-GYIB6ntWCjd0DGDTZJPru1Y6gcmxd9MKVfNeu&currency=MXN",
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
+        "https://o4506214875856896.ingest.sentry.io/api/4506214878937088/envelope/?sentry_key=b06d64f82064604c8635ecce64ed751f&sentry_version=7&sentry_client=sentry.javascript.angular-ivy%2F7.80.0",
+        "https://my-app-phi-coral-81.vercel.app/ngsw.json?ngsw-cache-bust=0.02400286174080435"        
+        
+        
+
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 5,
+        "maxAge": "50m",
+        "timeout": "5s"
+      }
+
+    }
+  ]
+}

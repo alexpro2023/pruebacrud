@@ -1,0 +1,21 @@
+.contenedorProducto{
+    width: 100%; display: flex;
+}
+
+.imagneproducto{
+    margin: 4px;
+}
+
+
+@media only screen and (max-width: 890px)
+{
+  .contenedorProducto{
+   display: block;
+  }
+  .imagneproducto{
+    text-align: center;    
+  }
+  .iamgen{
+    max-width: 100%;
+  }
+}

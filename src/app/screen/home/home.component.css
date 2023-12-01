@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&family=Lobster&display=swap');
+
+.container-cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    box-shadow: silver;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+    
+  .cursos {  
+    height: 340px;
+    padding: 15px;  
+    
+  }
+  
+  .cursos-datos h3{
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+  }
+  
+  .cursos-datos p{
+    margin: 10px;
+    font-size: 12px;
+  }
+  
+  .tipoPagaGratis{
+    color: rgb(20, 24, 230);
+  }
+   
+  .cursos-datos {    
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Divide el contenedor en dos filas de igual altura */
+    height: 62%;
+  }
+  
+  .BotonVerCurso{
+      text-decoration: none;
+      border: none;
+      border-radius: 10px;
+      background-color:rgb(175, 65, 226); /* Green */    
+      color: rgb(255, 255, 255);
+      padding: 15px 32px;
+      text-align: center;        
+      font-size: 16px;
+      width: 80%;
+  }
+  
+  .container-NuestrosNumeros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;    
+    padding-right: 60px;
+    padding-left: 60px;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+  }
+
+  .numeros-datos{
+    padding: 35px;
+  }
+  
+
+@media only screen and (max-width: 991px)
+{
+  .container-cursos{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 991px)
+{
+  .container-NuestrosNumeros{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
