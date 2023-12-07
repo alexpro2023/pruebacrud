@@ -1,0 +1,70 @@
+<div style="margin:50px;  text-align: center;">
+    <div>
+        <h1>Editar usuario</h1>
+    </div>
+    <div class="col-sm-6 offset-3 mt-5">
+
+    <form [formGroup]="formUser" (ngSubmit)="actualizaDatos(datosUsuario.id)">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <input type="text" formControlName="nombre" placeholder="Nombre" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <input type="text" formControlName="descripcion" placeholder="Descripcion"  class="form-control">
+                </div> 
+            </div>
+
+        </div>
+       
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <input type="number" formControlName="precio" placeholder="Precio"  class="form-control">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <input type="number" formControlName="cantidad" placeholder="Cantidad"  class="form-control">
+                </div>
+
+            </div>
+        </div>     
+        
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <input type="number" formControlName="cantidad_min" placeholder="Cantidad_min" class="form-control">
+                </div> 
+            </div>
+
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <select  name="categorias" id="categorias" formControlName="categorias" placeholder="Categorias" class="form-control">
+                        <option value="categorias">Cocina</option>
+                        <option value="categorias">Bebida</option>
+                        <option value="categorias">Postre</option>
+                       
+                    
+                      </select>
+                   
+                </div>
+            </div>
+        </div>
+
+            
+        <div>
+            <button type="submit" class="btn btn-success">Registrar</button>
+        </div>
+        
+        
+        
+    </form>
+        
+</div>
+</div>

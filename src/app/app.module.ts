@@ -15,6 +15,10 @@ import { PrivacidadComponent } from './screen/privacidad/privacidad.component';
 import { SobreNosotrosComponent } from './screen/sobre-nosotros/sobre-nosotros.component';
 import { PerfilUsuarioComponent } from './screen/perfil-usuario/perfil-usuario.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { HttpClientModule } from '@angular/common/http';
+import { ListarComponent } from './screen/crud/listar/listar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +37,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
