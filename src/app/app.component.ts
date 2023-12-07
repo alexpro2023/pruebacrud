@@ -18,8 +18,8 @@ export class AppComponent implements OnInit{
   }
 
   mostrarNotificacion(): void {
-    this.Notificaciones.showNotification('¿Ya te registraste?', {
-      body: 'Subscribete para ver todos los contenidos del sitio te esperamos!!!',
+    this.Notificaciones.showNotification('¿Ya checaste nuestras promociones ', {
+      body: 'Ordena por que acaban',
     });
   }
 }
