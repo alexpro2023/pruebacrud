@@ -20,3 +20,32 @@ jobs:
     - name: Run TestCafe tests
       run: npx testcafe chrome:headless src/test/testCreate.js && npx testcafe chrome:headless src/test/testNavegacion.js
 
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: |
+        npx testcafe chrome:headless src/test/testCreate.js &&
+        npx testcafe chrome:headless src/test/testNavegacion.js &&
+        npx testcafe chrome:headless src/test/testEdit.js &&
+        npx testcafe chrome:headless src/test/testDelete.js
