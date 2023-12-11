@@ -18,5 +18,5 @@ jobs:
       run: npm install
 
     - name: Run TestCafe tests
-      run: npx testcafe chrome:headless test/testCreate.js && npx testcafe chrome:headless test/testNavegacion.js
+      run: npx testcafe chrome:headless src/test/testCreate.js && npx testcafe chrome:headless src/test/testNavegacion.js
 
