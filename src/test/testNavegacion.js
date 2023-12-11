@@ -1,0 +1,10 @@
+import { Selector } from 'testcafe';
+
+fixture('Navegacion Home - CRUD')
+    .page('https://pruebacrud.vercel.app/home');
+
+test('Navegar a CRUD', async t => {
+    const link = Selector('a').withText('Crud_Menu');
+    await t.expect(link.visible).ok('El enlace no está visible').click(link);
+    await t.wait(10000);
+}).skipJsErrors();
