@@ -8,7 +8,7 @@ fixture('Navegacion Home - CRUD')
 
 
 test('Navegar a CRUD', async t => {
-    const link = Selector('a').withText('Crud_Menu');
+    const link = Selector('a').withText('Crud');
     await t.expect(link.visible).ok('El enlace no está visible').click(link);
     await t.wait(10000);
 }).skipJsErrors();
