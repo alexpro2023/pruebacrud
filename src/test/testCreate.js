@@ -21,8 +21,8 @@ test('Test Create', async t => {
     await t.wait(2000);
 
     // Ingresa datos en los campos
-    await t.typeText('input[formcontrolname="nombre"]', 'Molletes');
-    await t.typeText('input[formcontrolname="descripcion"]', 'Molletes de pollo con queso y base de frijoles');
+    await t.typeText('input[formcontrolname="nombre"]', 'Quesadillas de pollo');
+    await t.typeText('input[formcontrolname="descripcion"]', 'quesadillas de pollo con queso');
     await t.typeText('input[formcontrolname="precio"]', '25');
     await t.typeText('input[formcontrolname="cantidad"]', '20');
     await t.typeText('input[formcontrolname="cantidad_min"]', '5');
