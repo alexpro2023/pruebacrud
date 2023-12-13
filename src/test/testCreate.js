@@ -44,3 +44,4 @@ test('Test Create', async t => {
     // Puedes agregar más aserciones o interacciones después del clic en "Registrar" si es necesario
 })
     .skipJsErrors();
+//test creado con las pruebas
